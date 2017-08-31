@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-cloudkitid”,
+  "version": “0.0.1”,
+  "description": "Cordova plugin to get the UserRecordID from a cloudkit container.",
+  "cordova": {
+    "id": "cordova-plugin-cloudkitid",
+    "platforms": [
+      “ios”
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjepper/cordova-plugin-cloudkitid"
+  },
+  "keywords": [
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": “Kjepper",
+  "license": "MIT"
+}
