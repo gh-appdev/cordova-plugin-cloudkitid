@@ -1,6 +1,5 @@
 #import "cloudKitId.h"
 #import <Cordova/CDV.h>
-#import <CloudKit/CloudKit.h>
 
 
 @implementation CloudKitId
