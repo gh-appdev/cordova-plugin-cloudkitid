@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-cloudkitid",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Cordova plugin to get the UserRecordID from a cloudkit container.",
   "cordova": {
     "id": "cordova-plugin-cloudkitid",
