@@ -20,21 +20,21 @@
             [container fetchUserRecordIDWithCompletionHandler:^(CKRecordID *recordID, NSError *error) {
                if (error) {
                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR
-                    messageAsString:error.localizedDescription];
+                    messageAsString:[error localizedDescription]];
                }
                else {
                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
                     messageAsString:recordID.recordName];
                }
+               [self.commandDelegate sendPluginResult:pluginResult
+                    callbackId:command.callbackId];                
             }];
         }
         @catch (NSException *exception) {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR
                 messageAsString:exception.reason];
-        }
-        @finally {
-           [self.commandDelegate sendPluginResult:pluginResult
-            callbackId:command.callbackId];
+            [self.commandDelegate sendPluginResult:pluginResult
+                callbackId:command.callbackId];
         }
     }
 }
